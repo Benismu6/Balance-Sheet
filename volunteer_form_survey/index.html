@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Baltimore City Volunteer survey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="background">
+            <div class="container">
+                <header class="header">
+                    <h1>Baltimore City Volunteer Survey</h1>
+                </header>
+
+            </div>
+            <!-- No where to save data so action is blank -->
+            <form method="post" action="">
+                <p>Make a Difference Today: Volunteer with Us!</p>
+                <fieldset>
+                    <label for="first-name" id="first-name-label" >First name <input id="first-name" name="first-name" type="text" placeholder="John" required></input></label>
+                    <label for="last-name" id="last-name-label">Last name <input id="last-name" type="text" name="last-name" placeholder="Smith" required ></input></label>
+                    <label for="email" id="email-label">Email <input id="email" name="email" type="email" placeholder="johnsmith@gmail.com" required ></input></label>
+                     <label for="phone-number" id="phone-number-label">Phone number <input id="phone-number" name="phone-number" type="number" min="1111111111" max="9999999999" placeholder="123-456-7890"></input></label>
+                    <label for="address" id="address-label">Address <input id="address" name="address" placeholder="123 York Rd" required ></input></label>
+                    <label for="city"><input id="city" name="city" type="text" placeholder="Baltimore" class="city_state_zip" required></input></label>
+                    <label for="state">
+                        <select id="state" name="state" class="city_state_zip">
+                            <option value="">State</option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="Arkansas">Arkansas</option>
+                            <option value="California">California</option>
+                            <option value="Colorado">Colorado</option>
+                            <option value="Connecticut">Connecticut</option>
+                            <option value="Delaware">Delaware</option>
+                            <option value="Florida">Florida</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Idaho">Idaho</option>
+                            <option value="Illinois">Illinois</option>
+                            <option value="Indiana">Indiana</option>
+                            <option value="Iowa">Iowa</option>
+                            <option value="Kansas">Kansas</option>
+                            <option value="Kentucky">Kentucky</option>
+                            <option value="Louisiana">Louisiana</option>
+                            <option value="Maine">Maine</option>
+                            <option value="Maryland">Maryland</option>
+                            <option value="Massachusetts">Massachusetts</option>
+                            <option value="Michigan">Michigan</option>
+                            <option value="Minnesota">Minnesota</option>
+                            <option value="Mississippi">Mississippi</option>
+                            <option value="Missouri">Missouri</option>
+                            <option value="Montana">Montana</option>
+                            <option value="Nebraska">Nebraska</option>
+                            <option value="Nevada">Nevada</option>
+                            <option value="New Hampshire">New Hampshire</option>
+                            <option value="New Jersey">New Jersey</option>
+                            <option value="New Mexico">New Mexico</option>
+                            <option value="New York">New York</option>
+                            <option value="North Carolina">North Carolina</option>
+                            <option value="North Dakota">North Dakota</option>
+                            <option value="Ohio">Ohio</option>
+                            <option value="Oklahoma">Oklahoma</option>
+                            <option value="Oregon">Oregon</option>
+                            <option value="Pennsylvania">Pennsylvania</option>
+                            <option value="Rhode Island">Rhode Island</option>
+                            <option value="South Carolina">South Carolina</option>
+                            <option value="South Dakota">South Dakota</option>
+                            <option value="Tennessee">Tennessee</option>
+                            <option value="Texas">Texas</option>
+                            <option value="Utah">Utah</option>
+                            <option value="Vermont">Vermont</option>
+                            <option value="Virginia">Virginia</option>
+                            <option value="Washington">Washington</option>
+                            <option value="West Virginia">West Virginia</option>
+                            <option value="Wisconsin">Wisconsin</option>
+                            <option value="Wyoming">Wyoming</option>
+                        </select>
+                    <label for="zip-code"><input id="zip-code" name="zip-code" type="text" placeholder="12345" class="city_state_zip" required></input></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Area(s) of interest</legend>
+                    <label>Please select the areas you are interested in volunterring for (check all that apply):</label>
+                    <label for="community-cleanup"><input id="community-cleanup" name="volunteer-interest" type="checkbox" class="inline" value="community-cleanup">Community Cleanup</label>
+                    <label for="youth-programs"><input id="youth-programs" name="volunteer-interest" type="checkbox" class="inline" value="youth-programs">Youth Programs</label>
+                    <label for="elderly-care"><input id="elderly-care" name="volunteer-interest" type="checkbox" class="inline" value="elderly-care">Elderly Care</label>
+                    <label for="homelessness-support"><input id="homelessness-support" name="volunteer-interest" type="checkbox" class="inline" value="homelessness-support">Homelessness Support</label>
+                    <label for="environmental-support"><input id="environmental-support" name="volunteer-interest" type="checkbox" class="inline" value="environmental-support">Environmental Support</label>
+                    <label for="arts-and-culture-events"><input id="arts-and-culture-events" name="volunteer-interest" type="checkbox" class="inline" value="arts-and-culture-events">Arts and Culture Events</label>
+                    <label for="health-and-wellness-programs"><input id="health-and-wellness-programs" name="volunteer-interest" type="checkbox" class="inline" value="health-and-wellness-programs">Health and Wellness Programs</label>
+                    <label for="education-and-tutoring"><input id="education-and-tutoring" name="volunteer-interest" type="checkbox" class="inline" value="education-and-tutoring">Education and Tutoring</label>
+                    <input id="other" name="other" placeholder='"Other" (please specify)'>
+               </fieldset>
+
+               <fieldset>
+                <legend>Availability</legend>
+                <label>What days of the week are you available for volunterring? (check all that apply):</label>
+                    <label for="monday"><input id="monday" name="monday" value="monday" type="checkbox" class="inline">Monday</label>
+                    <label for="tuesday"><input id="tuesday" name="tuesday" value="tuesday" type="checkbox" class="inline">Tuesday</label>
+                    <label for="wednesday"><input id="wednesday" name="wednesday" value="wednesday" type="checkbox" class="inline">Wednesday</label>
+                    <label for="thursday"><input id="thursday" name="thursday" value="thursday" type="checkbox" class="inline">Thursday</label>
+                    <label for="friday"><input id="friday" name="friday" value="friday" type="checkbox" class="inline">Friday</label>
+                    <label for="saturday"><input id="saturday" name="saturday" value="saturday" type="checkbox" class="inline">Saturday</label>
+                    <label for="sunday"><input id="sunday" name="sunday" value="sunday" type="checkbox" class="inline">Sunday</label>
+                    <label>What times are you generally available? (check all that apply)</label>
+                    <label for="morning" ><input id="morning" name="morning" value="morning" type="checkbox" class="inline">Morning </label>
+                    <label for="afternoon" ><input id="afternoon" name="afternoon" value="afternoon" type="checkbox" class="inline">Afternoon </label>
+                    <label for="evening" ><input id="evening" name="evening" value="evening" type="checkbox" class="inline">Evening </label>
+            </fieldset>
+
+                <fieldset>
+                    <legend >Experience & Motivation</legend>
+                    <label for="experience" >Please list any relevant skills or experience you have that could be beneficial for volunterring: 
+                    </label>
+                    <textarea id="experience" name="experience" rows="6" cols="50" placeholder="I have acquired (skills/experiences) from working or volunterring at..."></textarea>
+                    <label for="motivation">Why are you interested in volunteering for the City of Baltimore?
+                        <textarea id="motivation" name="motivation" rows="6" cols="50" placeholder="I want to help the City of Baltimore because..."></textarea> 
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Preferences:</legend>
+                    <label for="email"><input id="email" name="contact_preference" type="radio" class="inline" checked />Email</label>
+                    <label for="phone"><input id="phone" name="contact_preference" type="radio" class="inline" />Phone</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Comments:</legend>
+                    <label>Is there anything else you would like to share or ask about volunteering with the City of Baltimore?</textarea></label>
+                    <textarea id="comments" name="comments" rows="6" cols="50" placeholder="Tell us more about your interests and ideas..." ></textarea>
+                </fieldset>
+
+                <fieldset>
+                <label for="terms-and-conditions">
+                    <input  id="terms-and-conditions" name="terms-and-conditions" type="checkbox" value="terms-and-conditions" class="terms-and-conditions" required/> I accept the <a href="terms-and-conditions"> terms and conditions</a>
+                </label>
+            </fieldset>
+            <button type="submit" value="submit" class="submit-button" >Submit</button>
+            </form>
+    </body>
+</html>
